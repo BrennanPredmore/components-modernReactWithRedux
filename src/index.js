@@ -15,25 +15,25 @@ const App = () => {
       </ApprovalCard>
       <ApprovalCard >
         <CommentDetail
-          author='Sam'
-          timeAgo='12:20'
-          comment='I Love to code. I am obsessed with programming'
+          author={faker.name.firstName() + " " +  faker.name.lastName()}
+          timeAgo="13:34"
+          comment={faker.lorem.sentence()}
           avatar={faker.image.avatar()}
         />
              </ApprovalCard>
              <ApprovalCard>
         <CommentDetail
-          author='Alex'
+          author={faker.name.firstName() + " " + faker.name.lastName()}
           timeAgo='01:12'
-          comment="It's the best. Its all I do"
+          comment={faker.lorem.sentence()}
           avatar={faker.image.avatar()}
         />
       </ApprovalCard>
       <ApprovalCard>
         <CommentDetail
-          author='Jane'
+          author={faker.name.firstName() + " " +  faker.name.lastName()}
           timeAgo='16:43'
-          comment='So is Brennan. Hes the best'
+          comment={faker.lorem.sentence()}
           avatar={faker.image.avatar()}
         />
       </ApprovalCard>
